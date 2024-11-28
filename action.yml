@@ -1,0 +1,22 @@
+name: 'Set version in json file'
+description: 'Set a version number in a json file'
+author: 'COSONTECH'
+
+inputs:
+  version-number:
+    description: 'Version Number'
+    required: true
+  json-path:
+    description: 'JSON File Path'
+    required: true
+  json-property:
+    description: 'JSON Property'
+    required: true
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'code'  
+  color: 'blue'
